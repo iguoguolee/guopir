@@ -1,0 +1,15 @@
+angular.module('gochat').config(function($rounteProvider,$locationProvider){
+	$locationProvider.html5Mode(true);
+	$rounteProvider.
+		when('/',{
+			templateUrl:'/pages/message.html',
+			controller:'messageCtrl'
+		}).
+		when('/login',{
+			templateUrl:'/pages/login.html',
+			controller:'loginCtrl'
+		}).
+		otherwise({
+			redirectTo:'/login'
+		});
+});

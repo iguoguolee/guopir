@@ -1,0 +1,19 @@
+		<div class="co-md-12">
+			<div class="panel panel-default room">
+				<div class="panel-heading room-header">
+					SOCKET Test
+				</div>
+				<div class="panel-body room-content">
+					<div id="message" ng-controller="messageCtrl">
+						<div class="list-group-item" ng-repeat="message in messages">
+							guo:{{message}}	
+						</div>
+					</div>
+				</div>
+				<form action="" class="message-creator" ng-controller="messageCreatorCtrl">
+					<div class="form-group">	
+								<textarea name="" class="form-control message-input" ng-model="newMessage" required ctrl-enter-break-line="createMessage()" placehoder="ctrl+enter to send"></textarea>
+					</div>
+				</form>
+			</div>
+		</div>
